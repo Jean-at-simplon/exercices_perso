@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+body{
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.titre{
+  background-color: #B6B6B5;
+  text-align: center;
+}
+
+.bio{
+  text-align: justify;
+}
+
+.cacher{
+  list-style-type: none;
+}
+
+td[colspan="2"]{
+  text-align: center;
+}
+
+.bouton{
+  text-align: center;
+}
+
+.album{
+  text-align: center;
+}
+
+.well{
+  background-color: #CCC;
+  padding: 20px;
+}
