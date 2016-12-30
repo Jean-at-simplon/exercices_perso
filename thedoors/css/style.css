@@ -1,7 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway:500');
 
 body {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em ;
+  background-color: #CFCFCF;
+}
+
+.fontLobster, h2, h4 {
+  font-family: 'Lobster',cursive;
+}
+
+.fontLobster {
+  font-size : 1.5em ;
+}
+
+h2 {
+  font-size : 2em ;
 }
 
 
@@ -27,10 +42,15 @@ td[colspan="2"]{
 }
 
 .album{
-  text-align: center;
+  padding-left: 20%;
 }
 
 .well{
   background-color: #CCC;
   padding: 20px;
+}
+
+.groupe{
+  text-align: center;
+  width: 100%;
 }

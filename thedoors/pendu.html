@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="img/favicon.ico">
+  <title>The Doors - Une prière américaine</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/pendu.css">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <!-- Custom styles for this template -->
+  <link href="css/carousel.css" rel="stylesheet">
+</head>
+<!-- NAVBAR
+================================================== -->
+
+<body>
+  <div class="navbar-wrapper">
+    <div class="container">
+      <div class="col-lg-12 fontLobster">
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">The Doors</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html#groupe">Le groupe</a></li>
+                <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Les membres <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="index.html#membres">Jim Morrisson</a></li>
+                    <li><a href="index.html#membres">Ray Manzarek</a></li>
+                    <li><a href="index.html#membres">Robbie Krieger</a></li>
+                    <li><a href="index.html#membres">John Densmore</a></li>
+                  </ul>
+                </li>
+                <li><a href="index.html#disco">Discographie</a></li>
+                <li><a href="index.html#concert">Concerts</a></li>
+                <li><a href="">Jeu</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class = "container">
+
+    <div class="row">
+      <div class="col-lg-12 titre">
+        <h1>THE DOORS TO PLAY</h1>
+        <h1><small>le jeu du pendu</small></h1>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="texte">Le but du jeu est de trouver un titre d'une chanson des The Doors avant
+          que le bonhomme ne pende au bout de la corde. Vous avez le droit à 6 essais.
+        </p>
+      </div>
+    </div>
+
+    <!--<hr class="featurette-divider">-->
+
+    <div class="row">
+      <!--Image du Pendu-->
+      <div class="col-lg-2 col-lg-offset-1">
+        <img id = "pendu" src="img/pendu/image0.gif" alt="image du pendu">
+      </div>
+      <!--Affichage du jeu-->
+      <div class="col-lg-9">
+        <div class"row">
+          <!--Affichage du resultat-->
+          <div class="col-lg-12 resultat">
+            <p id="result"></p>
+          </div>
+          <!--Affichage des touches-->
+          <div id = "touch" class="col-lg-12 saisie">
+            <div>
+              <button id = "A" class="btn-lg btn-primary" onclick="appuyerTouche('A')">A</button>
+              <button id = "B" class="btn-lg btn-warning" onclick="appuyerTouche('B')">B</button>
+              <button id = "C" class="btn-lg btn-primary" onclick="appuyerTouche('C')">C</button>
+              <button id = "D" class="btn-lg btn-warning" onclick="appuyerTouche('D')">D</button>
+              <button id = "E" class="btn-lg btn-primary" onclick="appuyerTouche('E')">E</button>
+              <button id = "F" class="btn-lg btn-warning" onclick="appuyerTouche('F')">F</button>
+              <button id = "G" class="btn-lg btn-primary" onclick="appuyerTouche('G')">G</button>
+              <button id = "H" class="btn-lg btn-warning" onclick="appuyerTouche('H')">H</button>
+              <button id = "I" class="btn-lg btn-primary" onclick="appuyerTouche('I')">I</button>
+              <button id = "J" class="btn-lg btn-warning" onclick="appuyerTouche('J')">J</button>
+              <button id = "K" class="btn-lg btn-primary" onclick="appuyerTouche('K')">K</button>
+              <button id = "L" class="btn-lg btn-warning" onclick="appuyerTouche('L')">L</button>
+              <button id = "M" class="btn-lg btn-primary" onclick="appuyerTouche('M')">M</button>
+            </div>
+            <div>
+              <button id = "N" class="btn-lg btn-warning" onclick="appuyerTouche('N')">N</button>
+              <button id = "O" class="btn-lg btn-primary" onclick="appuyerTouche('O')">O</button>
+              <button id = "P" class="btn-lg btn-warning" onclick="appuyerTouche('P')">P</button>
+              <button id = "Q" class="btn-lg btn-primary" onclick="appuyerTouche('Q')">Q</button>
+              <button id = "R" class="btn-lg btn-warning" onclick="appuyerTouche('R')">R</button>
+              <button id = "S" class="btn-lg btn-primary" onclick="appuyerTouche('S')">S</button>
+              <button id = "T" class="btn-lg btn-warning" onclick="appuyerTouche('T')">T</button>
+              <button id = "U" class="btn-lg btn-primary" onclick="appuyerTouche('U')">U</button>
+              <button id = "V" class="btn-lg btn-warning" onclick="appuyerTouche('V')">V</button>
+              <button id = "W" class="btn-lg btn-primary" onclick="appuyerTouche('W')">W</button>
+              <button id = "X" class="btn-lg btn-warning" onclick="appuyerTouche('X')">X</button>
+              <button id = "Y" class="btn-lg btn-primary" onclick="appuyerTouche('Y')">Y</button>
+              <button id = "Z" class="btn-lg btn-warning" onclick="appuyerTouche('Z')">Z</button>
+            </div>
+          </div>
+          <p id="loose" class="resultat perdu">VOUS AVEZ PERDU</p>
+          <p id="win" class="resultat gagne">VOUS AVEZ GAGNE</p>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-lg-2 col-lg-offset-5">
+        <button id="refresh" class="btn btn-success">Changer de titre</button>
+      </div> 
+    </div>
+
+    <hr class="featurette-divider">
+
+  <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="">Back to top</a></p>
+        <p>&copy; 2016 The Back Door Man. &middot; <a href="">Privacy</a> &middot; <a href="">Terms</a></p>
+      </footer>
+
+  </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://getbootstrap.com/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/pendu.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Raleway:500');
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    background: url(../img/backgroundPendu.png) no-repeat rgba(0,0,0,0.1);
+    background-size: cover;
+}
+
+.fontLobster {
+    font-size: 1.5em;
+    font-family: 'Lobster', cursive;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.titre {
+    text-align: center;
+    margin-top: 7%;
+}
+
+.resultat {
+    font-size: 3em;
+    text-align: center;
+}
+
+.saisie{
+    text-align: center;
+}
+
+.perdu {
+    color: darkred;
+}
+
+.gagne{
+    color : darkgreen;
+}
+
+.texte{
+    text-align: center;
+    font-size: 1.5em;
+}
